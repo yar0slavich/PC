@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF
 }
 .main {
-    position: relative;
+    background: url(../img/main-bg.png) no-repeat center / cover;
 }
 /* header */
 .header {
@@ -77,10 +77,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* promo */
 .promo {
-    height: 100vh;
-    width: 100vw;
-    background: url(../img/main-bg.png) no-repeat center / cover;
-    position: absolute;
+    padding: 27rem 0 22.8rem 0;
+    background: url(../img/promo-bg.png) no-repeat center / cover;
+    position: relative;
     display: flex;
     align-items: center;
     top: -12rem;
@@ -117,3 +116,112 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
 }
 /* /.promo */
+
+/* /.about-us */
+.about-us {
+    padding: 8rem 0 10rem 0;
+}
+.about-us__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 54.2rem;
+}
+.about-us__img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    width: 52.6rem;
+}
+.about-us__img > img {
+    width: 44.6rem;
+    height: 44.6rem;
+    z-index: 5;
+}
+.about-us__img::after {
+    content: '';
+    position: absolute;
+    width: 52.6rem;
+    height: 49.9rem;
+    top: 0;
+    right: 0;
+    background: url(../img/icon-border.svg) no-repeat center / 52.6rem
+}
+.about-us__desc {
+    width: 63.6rem;
+    padding-top: 6.9rem;
+}
+.about-us__desc > h2 {
+    font-size: 4.8rem;
+    line-height: 140%;
+}
+.about-us__desc > p {
+    font-size: 1.6rem;
+    line-height: 160%;
+    padding-top: 4.5rem;
+}
+/* /.about-us */
+
+/* process */
+.process {
+    padding: 10rem 0;
+}
+.process__title  {
+    display: flex;
+    align-items: center;
+}
+.process__title > div {
+    position: relative;
+    border-radius: 50%;
+    width: 9.3rem;
+    height: 9.3rem;
+}
+.process__title > div::after {
+    content: '';
+    position: absolute;
+    width: 9.3rem;
+    height: 9.3rem;
+    top: 0;
+    right: 0;
+    background: url(../img/icon-heading.svg) no-repeat center / 9.3rem
+}
+.process__title > h2 {
+    font-size: 4.8rem;
+    line-height: 140%;
+    margin-left: 4rem;
+}
+.process__text {
+    font-size: 1.6rem;
+    opacity: 0.5;
+    line-height: 160%;
+    width: 41.1rem;
+    margin: 4.9rem 0 8rem 0;
+}
+.process__desc {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.process__desc > div {
+    width: 30.6rem;
+}
+.process__desc::before {
+    content: '';
+    position: absolute;
+    top: 6.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(90deg, rgba(200,154,252,1) 0%, rgba(124,106,250,1) 12.5%, rgba(124,106,250,1) 25%, rgba(200,154,252,1) 37.5%, rgba(200,154,252,1) 50%, rgba(124,106,250,1) 62.5%, rgba(124,106,250,1) 75%, rgba(200,154,252,1) 87.5%);
+}
+.process__desc > div > h3 {
+    font-size: 3.6rem;
+    line-height: 140%;
+    padding-bottom: 6.5rem;
+}
+.process__desc > div > p {
+    font-size: 1.4rem;
+    opacity: 0.5;
+    line-height: 160%;
+}
+/* /.process */
