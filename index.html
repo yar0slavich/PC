@@ -23,7 +23,7 @@
                     <a href="#">Процесс работы</a>
                     <a href="#">Команда</a>
                 </nav>
-                <button type="button" class="button header__button">Оставить заявку</button>
+                <button type="button" class="button header__button" id="modelOpen">Оставить заявку</button>
             </div>
         </div>
         <!-- /.header__wrap -->
@@ -51,7 +51,7 @@
                         <span class="timer__text">Дней</span>
                     </div>
                 </div>
-                <button type="button" class="button promo__button">Оставить заявку</button>
+                <button type="button" class="button promo__button" id="modelOpen">Оставить заявку</button>
             </div>
             <!-- /.container -->
         </section>
@@ -74,7 +74,7 @@
         <!-- /.about-us -->
         <section class="process">
             <div class="container">
-                <div class="process__title">
+                <div class="title-block process__title">
                     <div></div>
                     <h2>Процесс работы</h2>
                 </div>
@@ -101,7 +101,86 @@
             <!-- /.container -->
         </section>
         <!-- /.process -->
+        <section class="team">
+            <div class="container">
+                <div class="title-block team__title">
+                    <div></div>
+                    <h2>Наша команда</h2>
+                </div>
+                <div class="team__block">
+                    <div>
+                        <img src="./img/team-person.png" alt="person">
+                        <h3>Евгений Петров</h3>
+                        <p>Специалист по железу</p>
+                        <button type="button" class="button team__button">Биография</button>
+                    </div>
+                    <div>
+                        <img src="./img/team-person.png" alt="person">
+                        <h3>Евгений Петров</h3>
+                        <p>Специалист по железу</p>
+                        <button type="button" class="button team__button">Биография</button>
+                    </div>
+                    <div>
+                        <img src="./img/team-person.png" alt="person">
+                        <h3>Евгений Петров</h3>
+                        <p>Специалист по железу</p>
+                        <button type="button" class="button team__button">Биография</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /.conatiner -->
+        </section>
+        <!-- /.team -->
+        <section class="order">
+            <div class="container">
+                <div class="order__wrap">
+                    <h2>Закажите свою уникальную сборку</h2>
+                    <p>Мы свяжемся с вами, чтобы уточнить детали заказа</p>
+                    <button type="button" class="button order__button" id="modelOpen">Оставить заявку</button>
+                    <div class="order__social">
+                        <div>
+                            <a href="#">
+                                <img src="./img/vk.svg" alt="vk">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./img/youtube.svg" alt="youtube">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./img/facebook.svg" alt="facebook">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./img/instagram.svg" alt="instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.order -->
+        <div class="modal hidden" id="modal">
+            <div class="modal__wrap">
+                <h2>Заявка на сборку ПК</h2>
+                <p>Мы свяжемся с вами, чтобы обсудить детали заказа</p>
+                <div class="modal__form">
+                    <input type="text" placeholder="Как вас зовут">
+                    <input type="tel" placeholder="Номер телефона">
+                    <input type="email" placeholder="E-mail">
+                    <button type="submit" class="button modal__button" id="modelClose">Отправить</button>
+                </div>
+            </div>
+            <!-- /.modal__wrap -->
+        </div>
+        <!-- /.modal -->
     </main>
     <!-- /.main -->
+
+    <script src="js/main.js"></script>
 </body>
 </html>
